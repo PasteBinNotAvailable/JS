@@ -1,4 +1,4 @@
-export function NotifyButton() {
+
 var zNode = document.createElement('button')
 zNode.innerHTML = 'Click me for notifications!'
 zNode.style.fontFamily = "Arial"
@@ -30,4 +30,3 @@ zDivNode.style.backdropFilter = "blur(24px)"
 
 zDivNode.appendChild(zNode)
 document.body.appendChild(zDivNode)
-}
