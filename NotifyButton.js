@@ -17,6 +17,7 @@ zNode.style.cursor = "pointer"
 zNode.addEventListener('click', function() {
     zNode.remove()
     zDivNode.remove()
+    threadBlocker = 1
 })
 
 var zDivNode = document.createElement('div')
@@ -28,5 +29,8 @@ zDivNode.style.width = "100vw"
 zDivNode.style.height = "100vh"
 zDivNode.style.backdropFilter = "blur(24px)"
 
+var threadBlocker = 0
+
 zDivNode.appendChild(zNode)
 document.body.appendChild(zDivNode)
+while (threadBlocker === 0) {}
